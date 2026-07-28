@@ -12,7 +12,7 @@
     <header class="header">
         <button class="button">New to Netflix? Try 30 days for ₹0.</button>
     </header>
-    <main class="hero">
+    <main class="main">
 
         <nav class="navbar">
             <div>
@@ -24,7 +24,7 @@
             </div>
         </nav>
 
-        <div class="content">
+        <div class="hero">
             <h1>Unlimited movies, shows, and more</h1>
             <p>Plan starts at ₹149. Cancel anytime.</p>
             <h3>Ready to watch? Enter your email to start your membership.</h3>
@@ -34,6 +34,79 @@
             </div>
             <p>New members only. Terms below.</p>
         </div>
+
+        <div class="curve-wrap">
+            <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
+                <defs>
+                    <linearGradient id="curveFade" x1="0" y1="0" x2="1" y2="0">
+                        <stop offset="0%" stop-color="#e50914" stop-opacity="0" />
+                        <stop offset="50%" stop-color="#e50914" stop-opacity="1" />
+                        <stop offset="100%" stop-color="#e50914" stop-opacity="0" />
+                    </linearGradient>
+                    <linearGradient id="glowFade" x1="0" y1="0" x2="0" y2="1">
+                        <stop offset="0%" stop-color="#e50914" stop-opacity="0" />
+                        <stop offset="100%" stop-color="#e50914" stop-opacity="0.35" />
+                    </linearGradient>
+                </defs>
+
+                <path d="M0,60 Q600,10 1200,60 L1200,0 L0,0 Z" fill="url(#glowFade)" />
+
+                <path d="M0,60 Q600,10 1200,60" fill="none" stroke="url(#curveFade)" stroke-width="3" />
+            </svg>
+        </div>
+
+        <section class="curve-container">
+            <div class="trend">
+                <h3>Trending Now</h3>
+                <div class="row-container">
+                <a class="scroll-btn left" href="#card1">&#10094;</a>
+                <div class="movie-slider">
+                    <div class="card" id="card1">
+                        <img src="assets/movie1.webp" alt="">
+                        <div class="number">1</div>
+                    </div>
+                    <div class="card" id="card2">
+                        <img src="assets/movie2.webp" alt="">
+                        <div class="number">2</div>
+                    </div>
+                    <div class="card" id="card3">
+                        <img src="assets/movie3.webp" alt="">
+                        <div class="number">3</div>
+                    </div>
+                    <div class="card" id="card4">
+                        <img src="assets/movie4.webp" alt="">
+                        <div class="number">4</div>
+                    </div>
+                    <div class="card" id="card5">
+                        <img src="assets/movie5.webp" alt="">
+                        <div class="number">5</div>
+                    </div>
+                    <div class="card" id="card6">
+                        <img src="assets/movie6.webp" alt="">
+                        <div class="number">6</div>
+                    </div>
+                    <div class="card" id="card7">
+                        <img src="assets/movie7.webp" alt="">
+                        <div class="number">7</div>
+                    </div>
+                    <div class="card" id="card8">
+                        <img src="assets/movie8.webp" alt="">
+                        <div class="number">8</div>
+                    </div>
+                    <div class="card" id="card9">
+                        <img src="assets/movie9.webp" alt="">
+                        <div class="number">9</div>
+                    </div>
+                    <div class="card" id="card10">
+                        <img src="assets/movie10.webp" alt="">
+                        <div class="number">10</div>
+                    </div>
+                </div>
+                <a class="scroll-btn right" href="#card10">&#10095;</a>
+                </div>
+            </div>
+        </section>
+
     </main>
 </body>
 
