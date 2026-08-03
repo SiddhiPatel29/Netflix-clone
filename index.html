@@ -18,46 +18,47 @@
         <button class="button">New to Netflix? Try 30 days for ₹0.</button>
     </header>
     <main class="main">
+        <div class="hero-wrap">
+            <nav class="navbar">
+                <div>
+                    <img src="assets/logo.svg" alt="Netflix Logo" class="logo">
+                </div>
+                <div>
+                    <button class="btn btn1">English</button>
+                    <button class="btn btn2">Sign In</button>
+                </div>
+            </nav>
 
-        <nav class="navbar">
-            <div>
-                <img src="assets/logo.svg" alt="Netflix Logo" class="logo">
+            <div class="hero">
+                <h1>Unlimited movies, shows, and more</h1>
+                <p>Plan starts at ₹149. Cancel anytime.</p>
+                <h3>Ready to watch? Enter your email to start your membership.</h3>
+                <div class="input-box">
+                    <input type="email" placeholder="Email address">
+                    <button class="btn btn3">Try 30 Days for ₹0</button>
+                </div>
+                <p>New members only. Terms below.</p>
             </div>
-            <div>
-                <button class="btn btn1">English</button>
-                <button class="btn btn2">Sign In</button>
+
+            <div class="curve-wrap">
+                <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
+                    <defs>
+                        <linearGradient id="curveFade" x1="0" y1="0" x2="1" y2="0">
+                            <stop offset="0%" stop-color="#e50914" stop-opacity="0" />
+                            <stop offset="50%" stop-color="#e50914" stop-opacity="1" />
+                            <stop offset="100%" stop-color="#e50914" stop-opacity="0" />
+                        </linearGradient>
+                        <linearGradient id="glowFade" x1="0" y1="0" x2="0" y2="1">
+                            <stop offset="0%" stop-color="#e50914" stop-opacity="0" />
+                            <stop offset="100%" stop-color="#e50914" stop-opacity="0.35" />
+                        </linearGradient>
+                    </defs>
+
+                    <path d="M0,80 Q600,30 1200,80 L1200,0 L0,0 Z" fill="url(#glowFade)" />
+                    <path d="M0,80 Q600,30 1200,80 Z" fill="#000000" />
+                    <path d="M0,80 Q600,30 1200,80" fill="none" stroke="url(#curveFade)" stroke-width="3" />
+                </svg>
             </div>
-        </nav>
-
-        <div class="hero">
-            <h1>Unlimited movies, shows, and more</h1>
-            <p>Plan starts at ₹149. Cancel anytime.</p>
-            <h3>Ready to watch? Enter your email to start your membership.</h3>
-            <div class="input-box">
-                <input type="email" placeholder="Email address">
-                <button class="btn btn3">Try 30 Days for ₹0</button>
-            </div>
-            <p>New members only. Terms below.</p>
-        </div>
-
-        <div class="curve-wrap">
-            <svg viewBox="0 0 1200 80" preserveAspectRatio="none">
-                <defs>
-                    <linearGradient id="curveFade" x1="0" y1="0" x2="1" y2="0">
-                        <stop offset="0%" stop-color="#e50914" stop-opacity="0" />
-                        <stop offset="50%" stop-color="#e50914" stop-opacity="1" />
-                        <stop offset="100%" stop-color="#e50914" stop-opacity="0" />
-                    </linearGradient>
-                    <linearGradient id="glowFade" x1="0" y1="0" x2="0" y2="1">
-                        <stop offset="0%" stop-color="#e50914" stop-opacity="0" />
-                        <stop offset="100%" stop-color="#e50914" stop-opacity="0.35" />
-                    </linearGradient>
-                </defs>
-
-                <path d="M0,60 Q600,10 1200,60 L1200,0 L0,0 Z" fill="url(#glowFade)" />
-
-                <path d="M0,60 Q600,10 1200,60" fill="none" stroke="url(#curveFade)" stroke-width="3" />
-            </svg>
         </div>
 
         <section class="curve-container">
